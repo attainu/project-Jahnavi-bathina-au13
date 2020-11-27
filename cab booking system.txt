@@ -1,0 +1,165 @@
+##A python Core project
+## CAB BOOKING SYSTEM ####
+from driver import Driver
+import math
+if __name__ =='__main__':
+  class Driver:
+      def __init__(self):
+        print("The login credintails of Driver:")
+
+      def driver_name(self):
+        string =str(input("please enter your name: "))
+
+      def driver_emailid(self):
+        string =str(input("enter your email id: "))
+
+      def driver_password(self):
+        value =str(input("please enter your password: "))
+
+      def driver_availability(self):
+        print("The driver is available on and he is ready to start the journey: ")
+
+login=Driver()
+login.driver_name()
+login.driver_emailid()
+login.driver_password()
+login.driver_availability()
+if __name__ =='__main__':
+    class User:
+        def __init__(self):
+            print("The login credintails of user: ")
+
+        def user_name(self):
+            string =str(input("please enter your name: "))
+
+        def user_emaild(self):
+            string =str(input("enter your email id: "))
+
+        def user_password(self):
+            string =str(input("please create a password of minimum of 8 characters: "))
+
+        def login_credintails(self):
+            print("your registration had been sucessfully done")
+Rider=User()
+Rider.user_name()
+Rider.user_emaild()
+Rider.user_password()
+Rider.login_credintails()
+if __name__ =='__main__':
+    class Map:
+        def __init__(self):
+            print("The list of cities which cab provide services: ")
+            print("1.Hyderabad")
+            print("2.Delhi")
+            print("3.Mumbai")
+            print("4.Pune")
+            print("5.Banglore")
+            print("6.Kolkata")
+            print("7.Chennai")
+            print("8.Jaipur")
+        def map_city(self):
+            string = str(input("Please select the city which u want to leave:"))
+            string1 = str(input("Please select the city which u want to arrive:"))
+        def message(self):
+            print("Please check  the minimum distance which u want to travel between two cities")
+Selection=Map()
+Selection.map_city()
+Selection.message()
+city1  = input("enter the minimum  city distance which u leave:")
+
+X1 = city1.split(",")
+
+city2  =  input("enter the minimum  city distance which u want to arrive: ")
+
+X2 = city2.split(",")
+
+distance = math.sqrt( ((int(X1[0])-int(X2[0]))**2)+((int(X1[1])-int(X2[1]))**2))
+
+
+print("The total minimum distance between two cities which u want to tarvel is:",distance)
+fare = distance*10
+print("Total fair", round(fare))
+
+class Confirmation():
+    def __init__(self):
+        print("The confirmation of a cab details: ")
+
+    def cab_book(self):
+        val = int(input("please enter the OTP code  to confirm the cab:"))
+
+    def cab_book2(self):
+
+        print("The cab had been booked: ")
+
+    def location_update(self):
+        print("Location had been shared to u please check it: ")
+        print("Your journey will start in few seconds:")
+        print("Have a Good journey:")
+
+    def payment(self):
+        value=int(input("enter the amount that u want to pay: "))
+        print("The payment had been done sucessfully:")
+        
+    def review(self):
+        string =str(input("Please provide a review in a star format: "))
+        print("*****")
+
+    def end_trip(slef):
+        print("Your journey has come to an end:")
+        print("We hope your have been enjoyed our trip:")
+        print("have a Nice day:")
+
+End=Confirmation()
+End.cab_book()
+End.cab_book2()
+End.location_update()
+End.payment()
+End.review()
+#output
+user@user-PC MINGW64 ~/text.py (master)
+$ "C:/Program Files/Python38/python.exe" c:/Users/user/text.py/ola/Cab2.py
+The login credintails of Driver:
+please enter your name: williams
+enter your email id: will@1234gmail.com
+please enter your password: will1234
+The driver is available on and he is ready to start the journey:
+
+The login credintails of user:
+please enter your name: jahnavi
+enter your email id: jahnavibathina789@gmail.com
+please create a password of minimum of 8 characters: janu1234
+your registration had been sucessfully done
+
+The list of cities which cab provide services:
+1.Hyderabad
+2.Delhi
+3.Mumbai
+4.Pune
+5.Banglore
+6.Kolkata
+7.Chennai
+8.Jaipur
+Please select the city which u want to leave:Hyderabad
+Please select the city which u want to arrive:Banglore
+Please check  the minimum distance which u want to travel between two cities
+
+enter the minimum  city distance which u leave:3456,7890
+enter the minimum  city distance which u want to arrive: 5678,7894
+The total minimum distance between two cities which u want to tarvel is: 2222.003600357119
+Total fair 22220
+
+The confirmation of a cab details:
+please enter the OTP code  to confirm the cab:1234
+The cab had been booked:
+
+Location had been shared to u please check it:
+Your journey will start in few seconds:
+Have a Good journey:
+
+enter the amount that u want to pay: 5600
+The payment had been done sucessfully:
+Please provide a review in a star format: *****
+*****
+Your journey has come to an end:
+We hope your have been enjoyed our trip:
+have a Nice day
